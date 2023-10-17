@@ -1,0 +1,64 @@
+/* Stepper Container */
+.stepper-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Stepper Progress */
+  .stepper-progress {
+    width: 100%;
+    height: 8px;
+    background-color: #ccc;
+    margin: 16px 0;
+  }
+  
+  .stepper-progress-bar {
+    height: 100%;
+    background-color: #007bff;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  /* Stepper Steps */
+  .stepper-steps {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .stepper-step {
+    flex: 1;
+    text-align: center;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .stepper-step.active {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  /* Stepper Actions */
+  .stepper-actions {
+    margin: 16px 0;
+  }
+  
+  .stepper-actions button {
+    margin: 0 8px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .stepper-actions button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
