@@ -7,12 +7,12 @@ export const listeSymptom1 = [
     {
       photo: photo,
       message: 'Salut',
-      key: 'symptome-1',
+      key: photo,
     },
     {
       photo: image,
       message: 'Bonjour Yacoub',
-      key: 'symptome-2',
+      key: image,
     },
   ]
 
@@ -20,14 +20,50 @@ export const listeSymptom1 = [
     {
       photo: verntre,
       message: 'Mal au ventre',
-      key: 'symptome-1',
+      key: verntre,
     },
     {
       photo: peid,
       message: 'Mal à au peid',
-      key: 'symptome-2',
+      key: peid,
+    },
+    {
+      photo: photo,
+      message: 'Salut',
+      key: photo,
     },
   ]
-
+  export const listeSymptom3 = [
+    {
+      photo: photo,
+      message: 'Salut',
+      key: photo,
+    },
+    {
+      photo: image,
+      message: 'Bonjour Yacoub',
+      key: image,
+    },
+    {
+      photo: photo,
+      message: 'Salut',
+      key: photo,
+    },
+    {
+      photo: image,
+      message: 'Bonjour Yacoub',
+      key: image,
+    },
+    {
+      photo: photo,
+      message: 'Salut',
+      key: photo,
+    },
+    {
+      photo: image,
+      message: 'Bonjour Yacoub',
+      key: image,
+    },
+  ]
 
 

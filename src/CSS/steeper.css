@@ -1,64 +1,117 @@
-/* Stepper Container */
 .stepper-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  /* Stepper Progress */
-  .stepper-progress {
-    width: 100%;
-    height: 8px;
-    background-color: #ccc;
-    margin: 16px 0;
-  }
-  
-  .stepper-progress-bar {
-    height: 100%;
-    background-color: #007bff;
-    transition: width 0.3s ease-in-out;
-  }
-  
-  /* Stepper Steps */
-  .stepper-steps {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    max-width: 400px;
-  }
-  
-  .stepper-step {
-    flex: 1;
-    text-align: center;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    background-color: #fff;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .stepper-step.active {
-    background-color: #007bff;
-    color: #fff;
-  }
-  
-  /* Stepper Actions */
-  .stepper-actions {
-    margin: 16px 0;
-  }
-  
-  .stepper-actions button {
-    margin: 0 8px;
-    padding: 8px 16px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .stepper-actions button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
-  }
-  
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.stepper-progress {
+  height: 10px;
+  background-color: #eee;
+}
+
+.stepper-progress-bar {
+  height: 100%;
+  background-color: #ccc;
+}
+
+.stepper-steps {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.stepper-step {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.stepper-step.active {
+  background-color: #ccc;
+}
+
+.stepper-content {
+  margin-top: 10px;
+}
+
+.stepper-actions {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.stepper-button {
+  padding: 10px;
+  cursor: pointer;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+header h1 {
+  font-size: 20px;
+}
+
+header .fa-home {
+  font-size: 24px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Centre les boutons horizontalement */
+  margin-top: 20px; /* Espace entre le contenu et les boutons */
+}
+
+.button-container button {
+  margin: 0 10px; /* Espace entre les boutons */
+}
+/* CSS pour styliser le composant Symptome */
+.symptome-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.symptome-button img {
+  width: 100px; /* Ajustez la largeur de l'image selon vos besoins */
+  height: 100px; /* Ajustez la hauteur de l'image selon vos besoins */
+}
+
+.photo-group {
+  display: flex;
+  justify-content: space-between; /* Espace équitablement les photos dans le groupe */
+  margin-bottom: 20px; /* Espace entre les groupes de photos */
+}
+
+.photo-group > div {
+  flex: 0 0 30%; /* Ajustez la largeur des photos individuelles dans un groupe */
+  text-align: center; /* Centre le texte sous chaque photo */
+}
+
+/* ButtonComponent.css */
+
+.clicked-button {
+  background-color: #ee20b7; /* Remplacez cette couleur par celle que vous souhaitez */
+  color: #fff; /* Couleur du texte */
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.clicked-button:hover {
+  background-color: #FF8C66; /* Couleur au survol */
+}
+
+/* CSS pour centrer une image à gauche de l'écran */
+.centered-image {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  /* Vous pouvez spécifier la largeur de l'image */
+  width: 200px; /* Par exemple, ajustez la largeur selon vos besoins */
+}
